@@ -1,0 +1,121 @@
+{
+    "type": "safe_area",
+    "args": {
+      "bottom": true
+    },
+    "child": {
+      "type": "form",
+      "child": {
+        "type": "single_child_scroll_view",
+        "args": {
+          "padding": [
+            16,
+            0
+          ]
+        },
+        "child": {
+          "type": "container",
+          "args": {
+            "alignment": "topCenter",
+            "width": "infinity"
+          },
+          "child": {
+            "type": "container",
+            "args": {
+              "constraints": {
+                "maxWidth": 450
+              }
+            },
+            "child": {
+              "type": "column",
+              "args": {
+                "mainAxisSize": "min"
+              },
+              "children": [
+                {
+                  "type": "sized_box",
+                  "args": {
+                    "height": 16
+                  }
+                },
+                {
+                  "type": "sized_box",
+                  "args": {
+                    "height": 8
+                  }
+                },
+                {
+                  "type": "material",
+                  "args": {
+                    "borderRadius": 16,
+                    "color": "#fff",
+                    "elevation": 4,
+                    "margin": [
+                      0,
+                      8
+                    ],
+                    "padding": 16
+                  },
+                  "child": {
+                    "type": "column",
+                    "args": {
+                      "mainAxisSize": "min"
+                    },
+                    "children": [
+                       {
+                          "type": "text_form_field",
+                          "args": {
+                            "keyboardType": "multiline",
+                            "maxLines": 10,
+                            "decoration": {
+                              "hintText": "Escriba sus comentarios",
+                              "labelText": "Comentarios"
+                            },
+                            "validators": [
+                              {
+                                "type": "required"
+                              }
+                            ]
+                          },
+                            "id": "vanglar_ciBanco_Coments_Final"
+                        }
+                    ]
+                  }
+                },
+                {
+                  "type": "raised_button",
+                  "args": {
+                    "color": "#4a95ec",
+                    "colorBrightness": "dark",
+                    "onPressed": "##saveForm5(form_context)##"
+                  },
+                  "child": {
+                    "type": "container",
+                    "args": {
+                      "alignment": "center",
+                      "width": "infinity"
+                    },
+                    "child": {
+                      "type": "save_context",
+                      "args": {
+                        "key": "form_context"
+                      },
+                      "child": {
+                        "type": "text",
+                        "args": {
+                          "text": "Submit"
+                        }
+                      }
+                    }
+                  }
+                },
+                "{{previousButton}}",
+                "{{saveButton5}}"
+              ]
+            }
+          }
+        }
+      },
+      "id": "form_vanglar_ciBanco_f5"
+    }
+  }
